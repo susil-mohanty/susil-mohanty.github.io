@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Susil Kumar Mohanty</title>
+    <link rel="icon" href="https://i.imgur.com/oenjOXM.png">
+    <!-- Bootstrap CSS CDN -->
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript">
+      // Notice how this gets configured before we load Font Awesome
+      window.FontAwesomeConfig = { autoReplaceSvg: false }
+    </script>
+
+    <!-- Font Awesome JS -->
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/solid.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/fontawesome.js"></script>
+
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="modal-img">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+    <div class="wrapper">
+        <!-- Sidebar Holder -->
+        <nav id="sidebar">
+        	<p></p>
+        	<div class="thumbnail" >
+				<figure>
+                    <img id="profile_pic" src="https://i.imgur.com/KCqHi2C.jpg">
+				</figure>
+			</div>
+
+            <div class="sidebar-header">
+                <h3><strong>Susil Kumar Mohanty</strong></h3>
+                <span>Blockchain, Wireless Sensor Networks, Artificial Intelligence, VLSI Physiacal Design</span>
+            </div>
+
+            <!-- <ul class="list-unstyled components"> -->
+                <!-- <p>Dummy Heading</p> -->
+                <!-- <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li> -->
+                <!-- <li>
+                    <a href="#about">About</a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li> --><!-- 
+                <li>
+                    <a href="#">Resume</a>
+                </li> --><!-- 
+                <li>
+                    <a href="#contact">Contact</a>
+                </li> -->
+            <!-- </ul> -->
+
+            <!-- <ul class="list-unstyled CTAs">
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://drive.google.com/open?id=1KWMFOQ-ethRa0zTsFvrK0maFAF1G6nxD" class="hov resume">Resume</a>
+                </li>
+                <li>
+                    <a href="" class="article">Back to article</a>
+                </li>
+            </ul> -->
+            <div class="my_icon">   
+                        <a target="_blank" rel="noopener noreferrer" class="icon" title="Google Scholar" tooltip="Google Scholar" href="https://scholar.google.com/citations?hl=en&user=JBrbQ5sAAAAJ">
+                            <i class="fa fa-graduation-cap"></i>
+                        </a>
+
+                        <a target="_blank" rel="noopener noreferrer" class="icon" title="ResearchGate" href="https://www.researchgate.net/profile/Susil-Kumar-Mohanty">
+                            <i class="fab fa-researchgate"></i>
+                        </a>
+
+                        <a target="_blank" rel="noopener noreferrer" class="icon" title="GitHub" href="https://github.com/susil-mohanty">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        
+                        <a target="_blank" rel="noopener noreferrer" class="icon" title="LinkedIn" href="https://www.linkedin.com/in/susil-kumar-mohanty-8ba954b5/">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+
+                        <a target="_blank" rel="noopener noreferrer" class="icon" title="Twitter" href="https://twitter.com/susilmohanty11">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+            </div>
+        </nav>
+
+        <!-- Page Content Holder -->
+        <div id="content">
+
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+
+                    <button type="button" id="sidebarCollapse" class="navbar-btn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- add other links here -->
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#contact">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div id="sub-content">
+                    
+                <h2 id="about">About</h2>
+                
+                <div class="">
+                    <p>
+                        <i class="fa fa-suitcase fa-fw w3-margin-right w3-large w3-text-teal"></i> 
+                        Ph. D. Scholar, Network Security Lab
+                    </p>
+                    
+                    <p>Department of Computer Science and Engineering</p>
+                    
+                    <p>Indian Institute of Technlogy Patna, India</p>
+                </div>  
+
+                <div class="line"></div>
+
+<!-- 
+                <div id="skills">
+                	<h2>Skills</h2>
+                    <div class="">
+                        <h5>Languages</h5>
+                        <p>C, C++, Java, Python</p>
+                        <h5>Libraries Used</h5>
+                        <p>RxJava, Dagger 2, OpenCV-Python</p>
+                    </div>
+                </div> -->
+
+                <div class="line"></div>
+
+                <h2>Publications</h2>
+                <h3>Journals</h3>
+                <br>
+               <div id="publications">
+
+                    <div class="project">
+                        <a data-toggle="collapse" href="#collapseable2" role="button" aria-expanded="false" aria-controls="collapseable2" class="with-chevron">
+                            <h5 class="d-flex align-items-center justify-content-between">SATPAS: SINR-based Adaptive Transmission Power Assignment with Scheduling in WSNs<i class="fa fa-angle-down"></i></h5>
+                        </a>
+                        <p>Elsevier Engineering Applications of Artificial Intelligence (Elsevier-EAAI) - Under review</p>
+                        <div id="collapseable2" class="collapse hide">
+                            <a class="hov" target="_blank" rel="noopener noreferrer" href="https://github.com/Njack-IITP/IITP-Connect"><i class="glow fas fa-external-link-alt"></i></a>
+                            <p>Authors: <strong>Susil Kumar Mohanty</strong> and Siba Kumar Udgata</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="project">
+                        <a data-toggle="collapse" href="#collapseable1" role="button" aria-expanded="false" aria-controls="collapseable1" class="with-chevron">
+                            <h5 class="d-flex align-items-center justify-content-between">n-HTLC: Neo Hashed Time-Lock Commitment to Defend Against Wormhole Attack in Payment Channel Networks<i class="fa fa-angle-down"></i></h5>
+                        </a>
+                        <p>Elsevier Computers & Security (Elsevier-CS), 2021 - Accepted. (SCIE, CR: B, IF: 3.579, H5: 59)</p>
+                        <div id="collapseable1" class="collapse hide">
+                            <a class="hov" target="_blank" rel="noopener noreferrer" href="https://github.com/dsciitpatna/tensorflow-at-the-edge"><i class="glow fas fa-external-link-alt"></i></a>
+                            <p>Authors: <strong>Susil Kumar Mohanty</strong> and Somanath Tripathy</p>
+                            <p>
+                            In today's cryptocurrency, the Payment Channel Network (PCN) is noticed as one of the most gifted off-chain solutions for scalability issues. Besides this, it consumes lesser transaction fees and low transaction confirmation time. However, security and privacy issues need to be addressed appropriately to make the solution even more effective. Most of the existing HTLC (Hashed Time-Lock Contract) protocols revealed the sender's information to the intermediate users in the payment route. In this work, we propose an effective secure and privacy-preserving Payment Channel Network protocol, named Neo Hashed Time-Lock Commitment (n-HTLC) protocol.  (n-HTLC) does not require the sender to send any information to each intermediate user along the payment route, thus preserves the identity of the sender. But, (n-HTLC) is not compatible with Sphinx onion packet format. Therefore, a symmetric key encryption-based protocol called k-TLC has been proposed. k-TLC is compatible with the Sphinx onion packet format, which is used in the current Lightning network atop of the Bitcoin blockchain network. The security of both n-HTLC and kTLC are proved using the Universal Composability (UC) framework. It is observed that both ensure that no attacker can extract information on the payment route if at least one of the users in the path is honest.  To analyze the performance of both n-HTLC and kTLC payment protocol, we conduct experiments using the snapshots of Ripple network, Lightning network, and synthetic network of CryptoMaze. Our experimental results show that both n-HTLC and kTLC outperform state-of-the-art off-chain payment protocols in terms of computational and communication overhead.
+                            </p>  
+                       </div>  
+                    </div>
+
+                    <br>
+                    
+                    <div class="project">
+                        <a data-toggle="collapse" href="#collapseable3" role="button" aria-expanded="false" aria-controls="collapseable3" class="with-chevron">
+                            <h5 class="d-flex align-items-center justify-content-between">Minimizing Maximum Receiver Interference in Wireless Sensor Networks using Probabilistic Interference Model<i class="fa fa-angle-down"></i></h5>
+                        </a>
+                        <p>Elsevier Engineering Applications of Artificial Intelligence (Elsevier-EAAI), 2020. (SCIE, CR: B, IF: 4.201, H5: 57)</p>
+                        <div id="collapseable3" class="collapse hide">
+                            <a class="hov" target="_blank" rel="noopener noreferrer" href="https://www.sciencedirect.com/science/article/pii/S0952197620300506"><i class="glow fas fa-external-link-alt"></i></a>
+                            <p>Authors: <strong>Susil Kumar Mohanty</strong> and Siba Kumar Udgata</p>
+                            <p>
+                            Now in the era of the Internet of Energy (IoE), researchers are more focused on optimal energy utilization. In the wireless sensor network, maximization of battery lifetime or network lifetime is one of the primary research objectives. There are many techniques available to enhance the network lifetime, and interference minimization is one of them. Interference minimization leads to less transmission power consumption in wireless sensor networks and thus enhances the network lifetime. The interference minimization is proven to be NP-Hard problem. In this paper, we have proposed a method to minimize receiver interference using different encoding schemes and genetic algorithm. We have used more realistic probabilistic interference model to calculate receiver interference instead of the graph-based model used in most of the literature. The Genetic Algorithm used to minimize receiver interference uses three different chromosome representation schemes, namely Prüfer code, Edge-set, and Edge-window-decoder. We have used benchmark data sets and special cases like exponential node chain, two exponential node chain, spiral model, one cluster, and two-cluster for experimental simulations. Our proposed algorithm outperforms other algorithms available in the literature like MI-S (Minimizing Interference in Sensor networks), MinMax-RIP (Minimizing Maximum Receiver Interference Problem), and MST (Minimum Spanning Tree: Prim’s algorithm) in terms of minimizing maximum receiver interference in the network.
+                        </p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                <h3>Conferences</h3>
+                <br>
+                    <div class="project">
+                        <a data-toggle="collapse" href="#collapseable4" role="button" aria-expanded="false" aria-controls="collapseable4" class="with-chevron">
+                            <h5 class="d-flex align-items-center justify-content-between">MAPPCN: Multi-hop, Anonymous and Privacy-Preserving Payment Channel Network<i class="fa fa-angle-down"></i></h5>
+                        </a>
+                        <p>Financial Cryptography and Data Security (FC), 2020. (CR: B, H5: 46)</p>
+                        <div id="collapseable4" class="collapse hide">
+                            <a class="hov" target="_blank" rel="noopener noreferrer" href="https://link.springer.com/chapter/10.1007/978-3-030-54455-3_34"><i class="glow fas fa-external-link-alt"></i></a>
+                            <p>Authors: Somanath Tripathy and <strong>Susil Kumar Mohanty</strong></p>
+                            <p>
+                            Payment channel network (PCN) has become an indispens-able mechanism to resolve scalability issues in blockchain-based cryp-tocurrencies. On the other hand, PCNs do not provide adequate securityand privacy guarantee. Most of the existing payment schemes leak in-formation about payer or payee to the nodes in the payment path. Toaddress this issue, we propose a simple but effective, multi-hop, anony-mous, and privacy-preserving PCN(MAPPCN). MAPPCN constructionis based on Elliptic curve cryptography (ECC) and is proved to be securewhile achieving payment path privacy, sender, and receiver anonymity.MAPPCN can be performed in (3·n+ 5) Elliptic curve scalar multipli-cation (ECSM) operations for an off-chain payment operation.
+                            </p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="project">
+                        <a data-toggle="collapse" href="#collapseable" role="button" aria-expanded="false" aria-controls="collapseable" class="with-chevron">
+                            <h5 class="d-flex align-items-center justify-content-between">G-NSVF: A Greedy Algorithm for Non-slicing VLSI Floorplanning<i class="fa fa-angle-down"></i></h5>
+                        </a>
+                        <p>53th Annual Convention, Computer Society of India, 2020 - Accepted.</p>
+                        <div id="collapseable" class="collapse hide">
+                            <a class="hov" target="_blank" rel="noopener noreferrer" href="https://link.springer.com/chapter/10.1007/978-3-030-54455-3_34"><i class="glow fas fa-external-link-alt"></i></a>
+                            <p>Authors: B. N. Bhramar Ray, Sony Singdha Sahoo, and <strong>Susil Kumar Mohanty</strong></p>
+                            <p>
+                            G-NSVF: A Greedy Algorithm for Non-slicing VLSI Floorplanning
+                            </p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="project">
+                        <a data-toggle="collapse" href="#collapseable6" role="button" aria-expanded="false" aria-controls="collapseable6" class="with-chevron">
+                            <h5 class="d-flex align-items-center justify-content-between">An Iterative Concave-Convex Wirelength Model for Analytical Placement<i class="fa fa-angle-down"></i></h5>
+                        </a>
+                        <p>2018 IEEE International Symposium on Smart Electronic Systems (IEEE-iSES), Hyderabad, India, 2018.</p>
+                        <div id="collapseable6" class="collapse hide">
+                            <a class="hov" target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/document/8719371"><i class="glow fas fa-external-link-alt"></i></a>
+                            <p>Authors: B. N. Bhramar Ray, Sony Singdha Sahoo, Rasheswari Bhramar Ray, and <strong>Susil Kumar Mohanty</strong></p>
+                            <p>
+                            Analytical placer very often uses half-perimeter wirelength (HPWL) model as an objective function for solving placement problem. State-of-the-art iterative wirelength models for HPWL are log-sum-exp (LSE) [1], weighted average (WA) [2], (γ, q) [3] and CHMAX [4] wirelength models. In this paper, we propose an iterative wirelength model for HPWL providing smooth approximation to max function. The new max function is the difference of two convex functions. The error upper bound of proposed model is tighter than upper bound errors of existing iterative wirelength models. Integration of new model in analytical placement engine NTUplacer, reduces the final placement wirelength by 13%, 10%, 3% and 1.5% on an average on ISPD 2005 benchmark circuits as oppose to LSE, WA, (γ, q) and CHMAX models respectively.
+                            </p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="project">
+                        <a data-toggle="collapse" href="#collapseable7" role="button" aria-expanded="false" aria-controls="collapseable7" class="with-chevron">
+                            <h5 class="d-flex align-items-center justify-content-between">HPWL Formulation for Analytical Placement using Gaussian Error Function<i class="fa fa-angle-down"></i></h5>
+                        </a>
+                        <p>2017 International Conference on Information Technology (ICIT), IEEE Computer Society, Bhubaneswar, India, 2017.</p>
+                        <div id="collapseable7" class="collapse hide">
+                            <a class="hov" target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/abstract/document/8423883"><i class="glow fas fa-external-link-alt"></i></a>
+                            <p>Authors: B. N. Bhramar Ray, <strong>Susil Kumar Mohanty</strong>, Debabrat Sethy, and Rasheswari Bhramar Ray</p>
+                            <p>
+                            Placement is a crucial stage in the physical design of VLSI(Very Large Scale Integration). Analytical placer at this stage determines optical physical locations of cells in the chip while minimizing the total half-perimeter wirelength(HPWL) of the nets. The constraints imposed while minimizing the total HPWL of nets are non-overlapping of blocks, congestion, delay etc. This paper introduces a recursive smooth wirelength model for HPWL of a net using Gaussian error function, which can be used by analytical placers. The novelty of this model lies in approximating closely the HPWL of a net than other state-of-the-art wirelength models in the literature including log-sum-exponent(LSE), weighted average(WA), CHMAX and absolute wirelength(ABSWL) models. The HPWL accuracy of the proposed model for global and detailed placements for IBM ISPD 2004 benchmark suite shows less than 1% and 0.5% absolute errors in total wirelength in average respectively.
+                            </p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="project">
+                        <a data-toggle="collapse" href="#collapseable8" role="button" aria-expanded="false" aria-controls="collapseable8" class="with-chevron">
+                            <h5 class="d-flex align-items-center justify-content-between">An Optimized HPWL Model for VLSI Analytical Placement<i class="fa fa-angle-down"></i></h5>
+                        </a>
+                        <p>2015 International Conference on Information Technology (ICIT), IEEE Computer Society, Bhubaneswar, India, 2015.</p>
+                        <div id="collapseable8" class="collapse hide">
+                            <a class="hov" target="_blank" rel="noopener noreferrer" href="https://ieeexplore.ieee.org/abstract/document/8423883"><i class="glow fas fa-external-link-alt"></i></a>
+                            <p>Authors: B. N. Bhramar Ray,  S. Das, K. Hazra, N. Patra, and <strong>Susil Kumar Mohanty</strong></p>
+                            <p>
+                            In VLSI physical design, placement is an important stage. Analytical placer minimizes the half-perimeter wire lengh (HPWL) of the circuit as an objective function to place blocks optimally in the chip. This paper introduces a new smooth recursive model for HPWL function which can be used inside the analytical placers. The proposed model is more accurate than widely used log-sum-exponent (LSE)[9], weighted average (WA)[3] and ABSWL[7] models. The error upper bound of new approximation is also tightest among the existing wire length models. When deployed inside placement engine NUPlacer[1], it shows reduction in wire lengh by 12.3%, 10% and 3% on ISPD 2005 placement benchmarks compared to LSE, WA and ABSWL models respectively.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                </div>
+
+
+
+                <h2>Projects</h2>
+                
+                <div id="projects">
+                    <div class="project">
+                        <a data-toggle="collapse" href="#project1" role="button" aria-expanded="false" aria-controls="project1" class="with-chevron">
+                            <h5 class="d-flex align-items-center justify-content-between">Receiver Interference Minimization for Topology Control in Wireless Sensor Networks<i class="fa fa-angle-down"></i></h5>
+                        </a>
+                        
+                        <div id="project1" class="collapse hide">
+                            <p>M. Tech Project</p>  
+                            <p>In this project, we are using a probabilistic interference model for measuring the magnitude of the interference occurring at the receiver sensor node due to simultaneously transmitting data packets. This problem is proven to be NP-Hard and it is an optimization problem. To minimizing maximum receiver interference we have used Genetic Algorithm with three chromosome representation schemes (I. Prufer code, II. Edge-List, and III. Edge-window Decoder). Empirically, we have demonstrated that the Edge-window Decoder representation scheme is giving better results than other algorithms available in the state-of-the-art and Edge-List is the second best.</p>
+                            
+                       </div>  
+                       <p>
+                                <span> Supervisor: Prof. Siba Kumar Udgata, SCIS, UoH, India </span> 
+                       </p>
+                    </div>
+
+                    <br>
+
+                <div id="projects">
+                    <div class="project">
+                        <a data-toggle="collapse" href="#project2" role="button" aria-expanded="false" aria-controls="project2" class="with-chevron">
+                            <h5 class="d-flex align-items-center justify-content-between">Adaptive Transmission Power Assignment and Optimal Scheduling Length in WSNs using SINR Model<i class="fa fa-angle-down"></i></h5>
+                        </a>
+                        
+                        <div id="project2" class="collapse hide">
+                            <p>M. Tech Project</p>  
+                            <p>The transmission power assignment and scheduling length minimization both are proven to be NP-Hard. In this project, we are using SINR (Signal to Interference plus Noise Ratio) model for considering successful data packet transmission with minimum transmission power and scheduling. Assignment of optimal transmission power is a very difficult problem for this, we have developed some heuristics to assignment transmission power to each and every requests (or all sensor nodes are interested to transmit simultaneously) with minimum k-number of schedules according to MAC protocol. For minimizing total transmission power consumption and scheduling length, we have used Genetic Algorithm with two chromosome representation schemes (I. Edge-List, and II. Edge-window Decoder) with considering real sensor data sheet parameters. The current simulation shows positive gains in transmission power and scheduling lengths.</p>
+                            
+                       </div>  
+                       <p>
+                                <span> Supervisor: Prof. Siba Kumar Udgata, SCIS, UoH, India </span> 
+                       </p>
+                    </div>
+
+                    <br>
+
+                    
+                    <div class="project">
+                        <a data-toggle="collapse" href="#project3" role="button" aria-expanded="false" aria-controls="project3" class="with-chevron">
+                            <h5 class="d-flex align-items-center justify-content-between">Efficient Territory-Spanning Graph for Obstacle Avoiding Rectilinear Steiner Minimal Tree Construction<i class="fa fa-angle-down"></i></h5>
+                        </a>
+                        
+                        <div id="project3" class="collapse hide">
+                        <p>M. Sc. Project</p> 
+                        <p>
+                            Given a set of pins and a set of obstacles on a plane, an obstacle-avoiding rectilinear Steiner minimal tree (OARSMT) connects these pins, possibly through some additional points (called the Steiner points), and avoids running through any obstacle to construct a tree with a minimal total wirelength. The OARSMT problem becomes more important than ever for modern nanometer IC designs which need to consider numerous routing obstacles incurred from power networks, prerouted nets, IP blocks, etc. Considering obstacles significantly increases the problem complexity, and thus, most previous works suffer from either poor quality or expensive running time. To construct an initial connectivity graph we use a novel Territory-Obstacle Avoiding Spanning Graph (T-OASG) construction algorithm using partially Dynamic Programming techniques. Most of the cases the runtime complexity of our algorithm is O(k log k), where k = {1, 2, 3, ........, n}, but some cases (end of the chip dimension) the complexity of our algorithm is O(n log n).
+                        </p>
+                        </div>
+                        <p>
+                                <span> Supervisor: Dr. B. N. Bhramar Ray, CSA, UU, India </span> 
+                        </p>
+                    </div>
+
+                    <br>
+
+                    <div class="project">
+                        <a data-toggle="collapse" href="#collapseable3" role="button" aria-expanded="false" aria-controls="collapseable3" class="with-chevron">
+                            <h5 class="d-flex align-items-center justify-content-between">Bus Route Optimization Algorithm<i class="fa fa-angle-down"></i></h5>
+                        </a>
+
+                        <div id="collapseable3" class="collapse hide">
+                            <a class="hov" target="_blank" rel="noopener noreferrer" href="https://github.com/sheetal-g9/bus_route_optimization_algorithm"><i class="glow fas fa-external-link-alt"></i></a>
+
+                            <p>An algorithm to find best possible routes for buses to pick the passengers.</p>
+                            <p>Key Features : Convex Hull, Google Maps API, UTM Converter.</p>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <div class="project">
+                        <a data-toggle="collapse" href="#collapseable4" role="button" aria-expanded="false" aria-controls="collapseable4" class="with-chevron">
+                            <h5 class="d-flex align-items-center justify-content-between">Ball Detection Opencv-python<i class="fa fa-angle-down"></i></h5>
+                        </a>
+
+                        <div id="collapseable4" class="collapse hide">
+                            <a class="hov" target="_blank" rel="noopener noreferrer" href="https://github.com/sheetal-g9/ball_detection_opencv_python"><i class="glow fas fa-external-link-alt"></i></a>
+                            <p>An algorithm to detect a ball within a certain rgb range and size.</p>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+
+                </div>
+
+
+                
+                <div class="education">
+                <h2>Education</h2>
+                
+                <h5>
+                    <a class="hov" target="_blank" rel="noopener noreferrer" href="https://www.iitp.ac.in/">
+                        Indian Institute of Technology Patna, India 
+                    </a>
+                    <span class="right-side">
+                        <i class="fa fa-calendar fa-fw"></i> 
+                        January 2019 - Present
+                    </span>
+                </h5>
+                
+                <p>Ph. D. in Computer Science & Engineering 
+                    <span class="right-side"> Overall CPI: 8.38</span>
+                </p>
+                <p>Department of Computer Science and Engineering</p>
+
+                <br>
+                
+                <h5>
+                    <a class="hov" target="_blank" rel="noopener noreferrer" href="https://uohyd.ac.in/">
+                        University of Hyderabad, India 
+                    </a>
+                    <span class="right-side">
+                        <i class="fa fa-calendar fa-fw"></i> 
+                        2016 - 2018 (Rank 2)
+                    </span>
+                </h5>
+                <p>Master in Technology (Artificial Intelligence)
+                    <span class="right-side">Overall CGPA: 9.27</span>
+                </p>
+
+                <br>
+
+                <h5>
+                    <a class="hov" target="_blank" rel="noopener noreferrer" href="http://www.utkaluniversity.nic.in/">
+                        Utkal University, Vani Vihar, India 
+                    </a>
+                    <span class="right-side">
+                        <i class="fa fa-calendar fa-fw"></i> 
+                        2013 - 2015 (Rank 1)
+                    </span>
+                </h5>
+                <p>Master in Science (Computer Science) 
+                    <span class="right-side">Overall Percentage: 90.25</span>
+                </p>
+
+                <br>
+
+                <h5>
+                    <a class="hov" target="_blank" rel="noopener noreferrer" href="http://www.utkaluniversity.nic.in/">
+                        Utkal University, Vani Vihar, India 
+                    </a>
+                    <span class="right-side">
+                        <i class="fa fa-calendar fa-fw"></i> 
+                        2010 - 2013 (Rank: 1)
+                    </span>
+                </h5>
+                <p>Bachelor in Science (Computer Science) 
+                    <span class="right-side">Overall Percentage: 91.87</span>
+                </p>
+                    
+                </div>
+
+                <div class="line">
+                    
+                </div>
+
+                
+        <!--         <div class="por">
+                    <h2>Post of Responsibility</h2>   
+
+                    <h5>
+                        <a class="hov" target="_blank" rel="noopener noreferrer" href="https://in.linkedin.com/company/njack-iit-patna">
+                            NJACK IIT Patna 
+                        </a>
+                        <span class="right-side">
+                            <i class="fa fa-calendar fa-fw"></i> 
+                            May 2018-May 2019
+                        </span>
+                    </h5>
+
+                    <p>Android Development Sub-Coordinator</p> 
+
+                    <h5>
+                        <a class="hov" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/anwesha.iitpatna/">
+                            Anwesha IIT Patna 
+                        </a>
+                        <span class="right-side">
+                            <i class="fa fa-calendar fa-fw"></i> 
+                            March 2018-July 2019
+                        </span>
+                    </h5>
+
+                    <p>Android Development Sub-Coordinator</p> 
+
+                    <h5>
+                        <a class="hov" target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/CelestaIITP/">
+                            Celesta IIT Patna 
+                        </a>
+                        <span class="right-side">
+                            <i class="fa fa-calendar fa-fw"></i> 
+                            May 2018-October 2018
+                        </span>
+                    </h5>
+
+                    <p>Android Development Sub-Coordinator</p> 
+
+                </div>
+ -->
+                <div class="line"></div>
+
+    	        <div id="contact">
+    	        
+                	<h2>Contact</h2>
+                        
+                    <div class="row hov">
+                        <i class="far fa-envelope small-icon"></i>
+        	        	<a target="_blank" rel="noopener noreferrer" title="Gmail" href="mailto:susilmohanty11@gmail.com">
+                            susilmohanty11@gmail.com
+        				</a>	
+                    </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    
+     <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <!-- My Javascript -->
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
